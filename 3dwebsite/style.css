@@ -1,0 +1,116 @@
+:root {
+    --headerBackground: rgb(245, 245, 245);
+    --headerFont: #a9a9a9;
+    --bodyBackground: rgb(255, 255, 255);
+    --borderColor: #000000;
+}
+
+.darkmode {
+    --headerBackground: rgb(100, 100, 100);
+    color: white;
+    --borderColor: #ffffff;
+    --bodyBackground: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bodyBackground);
+    color: black;
+}
+
+header {
+    /* position: fixed; */
+    width: 100vw;
+}
+
+#logo {
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: var(--headerBackground);
+}
+
+#container1 {
+    font-family: "Ostrich Sans", sans-serif;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #a9a9a9;
+    font-stretch: condensed;
+    font-size: 20px;
+}
+
+a:hover {
+    color: gray;
+}
+
+#container2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+}
+
+#h11 {
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+#boxcontainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    border: 1px solid var(--borderColor);
+    height: 200px;
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxh1 {
+    font-family: sans-serif;
+}
+
+.boxh2 {
+    font-family: sans-serif;
+}
+
+label {
+    cursor: pointer;
+    border: 1px black solid;
+    padding: 5px;
+}
+
+label:hover {
+    text-decoration: underline;
+    color: #0000ff;
+}
+
+#submitBtn {
+    padding: 5px;
+}
